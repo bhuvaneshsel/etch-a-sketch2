@@ -1,0 +1,36 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    border: none;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pixel {
+    border: 1px black solid;
+    flex: 1;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.settings {
+    height: 200px;
+    border: 2px black solid;
+    width: 1000px;
+    display: flex;
+}
