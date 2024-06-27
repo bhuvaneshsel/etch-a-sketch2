@@ -25,7 +25,37 @@ container.addEventListener("mouseover", (e) => {
     e.target.style.backgroundColor = "black";
 })
 
-button.addEventListener("click", (e) => {
-    container.replaceChildren();
-    drawCanvas(+inputElement.value);
+inputElement.addEventListener("keydown", (e) => {
+    if (e.key ==="Enter") {
+        drawCanvasEvent(e)
+    }
+   
 })
+
+button.addEventListener("click", (e) => {
+    drawCanvasEvent(e)
+});
+
+function drawCanvasEvent(e) {
+    let num = +inputElement.value;
+    if (isNaN(num)) {
+            inputElement.value ="";
+            inputElement.placeholder = "Enter a number!"
+    }
+    else {
+        if (+inputElement.value > 100) {
+            inputElement.value ="";
+            inputElement.placeholder = "Too big!"
+        }
+        else if (inputElement.value <=0) {
+            inputElement.value ="";
+            inputElement.placeholder = "Too small!"
+        }
+        else {
+            container.replaceChildren();
+            drawCanvas(+inputElement.value);
+        }
+        
+    }
+        
+}
