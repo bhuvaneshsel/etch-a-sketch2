@@ -1,6 +1,6 @@
 let container = document.querySelector(".container")
 let inputElement = document.querySelector(".input-size")
-let button = document.querySelector("button");
+let button = document.querySelector(".enter");
 let main = document.querySelector("main");
 
 
@@ -40,7 +40,7 @@ function drawCanvasEvent(e) {
     let num = +inputElement.value;
     if (isNaN(num)) {
             inputElement.value ="";
-            inputElement.placeholder = "Enter a number!"
+            inputElement.placeholder = "Enter a number!";
     }
     else {
         if (+inputElement.value > 100) {
