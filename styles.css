@@ -77,4 +77,21 @@ h1 {
     width: 50px;
     border: none;
     background-color: rgb(211, 211, 211);
+    margin-right: 10px;
+}
+
+.enter:hover, .randomize:hover {
+    background-color: rgb(116, 116, 116);
+}
+
+.enter:active, .randomize:active {
+    background-color: rgb(70, 70, 70);
+}
+
+.randomize {
+    margin: 0;
+    height: 30px;
+    width: 120px;
+    border: none;
+    background-color: rgb(211, 211, 211);
 }
